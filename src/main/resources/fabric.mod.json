@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "rankyouressence",
+  "version": "${version}",
+  "name": "rankyouressence",
+  "description": "Rank icons next to player nicknames.",
+  "authors": [
+    "you"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.rankyouressence.RankMod"
+    ],
+    "client": [
+      "com.rankyouressence.client.RankClient"
+    ]
+  },
+  "mixins": [
+    "rankyouressence.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
